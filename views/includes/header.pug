@@ -1,0 +1,24 @@
+header
+  .collapse.bg-dark#navbarHeader
+    .container
+      .row
+        .col-sm-8.col-md-7.py-4
+          h4.text-white Hidden Content
+          p.text-muted Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+        .col-sm-4.offset-md-1.py-4
+          h4.text-white Contact
+          ul.list-unstyled
+            li
+              a.text-white(href='#') Facebook
+            li
+              a.text-white(href='#') Twitter
+            li
+              a.text-white(href='#') Instagram
+  nav.navbar.navbar-dark.bg-dark.shadow-sm
+    .container.d-flex.justify-content-between
+      a.navbar-brand.d-flex.align-items-center
+        //- Including the svg logo
+        include logo.svg
+        strong LogRocket Pug Example
+      button.navbar-toggler.collapsed&attributes({'data-toggle': 'collapse'}, {'data-target': '#navbarHeader'})
+        span.navbar-toggler-icon
